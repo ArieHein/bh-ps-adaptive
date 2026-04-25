@@ -1,0 +1,21 @@
+# Build artifacts and dependencies
+*.dll
+*.exe
+*.pdb
+
+# PowerShell local profile artifacts
+profile.ps1
+
+# Test result files
+TestResults.xml
+*.trx
+
+# Temp files
+/tmp/
+
+# VS Code settings (optional – keep if desired)
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
