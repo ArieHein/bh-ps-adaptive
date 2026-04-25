@@ -7,7 +7,7 @@ Claude or GitHub Copilot can collect structured user input through
 form-like dialogs.
 
 This module was created with AI-Assistance for speed.
-This module is currently in Beta, until I completly verified. Use at your own peril.
+This module is currently in Beta, until I completely verified. Use at your own peril.
 
 ---
 
