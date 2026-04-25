@@ -147,7 +147,7 @@ Invoke-Pester .\Tests\PSAdaptiveCards.Tests.ps1 -Output Detailed
 
 ## Repository layout
 
-```
+```text
 PSAdaptiveCards/
 ├── PSAdaptiveCards.psd1          Module manifest
 ├── PSAdaptiveCards.psm1          Module root (dot-sources all functions)
