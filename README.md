@@ -11,7 +11,7 @@ form-like dialogs.
 ## Features
 
 | Feature | Description |
-|---|---|
+| --- | --- |
 | `ConvertFrom-AdaptiveCard` | Parse an Adaptive Card JSON and return field metadata — no UI needed |
 | `Invoke-AdaptiveCardUI` | Render the card as a WinForms dialog and return the submitted values |
 | `Start-AdaptiveCardMCPServer` | Start a stdio MCP server exposing form generation as AI-callable tools |
@@ -19,7 +19,7 @@ form-like dialogs.
 ### Supported Adaptive Card elements
 
 | Element | WinForms control |
-|---|---|
+| --- | --- |
 | `TextBlock` | `Label` |
 | `Input.Text` | `TextBox` (multiline when `isMultiline: true`, password when `style: password`) |
 | `Input.Number` | `NumericUpDown` |
@@ -37,7 +37,7 @@ form-like dialogs.
 
 ## Requirements
 
-- **PowerShell 7.2+**
+- **PowerShell 7.5+**
 - **Windows** for `Invoke-AdaptiveCardUI` (requires `System.Windows.Forms`)
 - `ConvertFrom-AdaptiveCard` and `Start-AdaptiveCardMCPServer` are
   cross-platform
@@ -112,7 +112,7 @@ return the submitted values to the AI.
 #### MCP tools exposed
 
 | Tool | Description |
-|---|---|
+| --- | --- |
 | `generate_form` | Render a card JSON as a WinForms dialog; returns submitted values |
 | `parse_card` | Return field metadata without showing any UI |
 | `validate_card` | Check whether a string is valid Adaptive Card JSON |

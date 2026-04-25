@@ -5,7 +5,7 @@
     CompanyName       = 'BlackHat'
     Copyright         = '(c) 2026 ArieHein. All rights reserved.'
     Description       = 'PowerShell module that generates a Windows Forms UI from an Adaptive Cards JSON structure and hosts a local MCP server so AI assistants can drive form collection.'
-    PowerShellVersion = '7.2'
+    PowerShellVersion = '7.5'
     RootModule        = 'PSAdaptiveCards.psm1'
 
     FunctionsToExport = @(
