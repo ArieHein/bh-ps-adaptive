@@ -1,0 +1,66 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "title": "Deploy Pipeline",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Deployment Configuration",
+      "size": "large",
+      "weight": "bolder"
+    },
+    {
+      "type": "Input.Text",
+      "id": "appName",
+      "label": "Application Name",
+      "placeholder": "my-app",
+      "isRequired": true
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "environment",
+      "label": "Target Environment",
+      "isRequired": true,
+      "style": "expanded",
+      "choices": [
+        { "title": "Development",  "value": "dev"  },
+        { "title": "Staging",      "value": "stg"  },
+        { "title": "Production",   "value": "prod" }
+      ]
+    },
+    {
+      "type": "Input.Text",
+      "id": "imageTag",
+      "label": "Docker Image Tag",
+      "placeholder": "latest",
+      "value": "latest"
+    },
+    {
+      "type": "Input.Number",
+      "id": "replicas",
+      "label": "Replica Count",
+      "min": 1,
+      "max": 20,
+      "value": 2
+    },
+    {
+      "type": "Input.Toggle",
+      "id": "autoScale",
+      "title": "Enable Auto-Scaling",
+      "value": "false"
+    },
+    {
+      "type": "Input.Toggle",
+      "id": "confirm",
+      "title": "I confirm this deployment",
+      "isRequired": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Deploy"
+    }
+  ]
+}

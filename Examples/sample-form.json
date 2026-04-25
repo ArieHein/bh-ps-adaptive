@@ -1,0 +1,104 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "title": "User Registration",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "User Registration Form",
+      "size": "large",
+      "weight": "bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Please fill in all required fields (marked with *).",
+      "wrap": true,
+      "color": "attention"
+    },
+    {
+      "type": "Input.Text",
+      "id": "fullName",
+      "label": "Full Name",
+      "placeholder": "Enter your full name",
+      "isRequired": true,
+      "maxLength": 100
+    },
+    {
+      "type": "Input.Text",
+      "id": "email",
+      "label": "Email Address",
+      "placeholder": "user@example.com",
+      "isRequired": true,
+      "style": "email"
+    },
+    {
+      "type": "Input.Text",
+      "id": "bio",
+      "label": "Short Bio",
+      "placeholder": "Tell us a bit about yourself...",
+      "isMultiline": true
+    },
+    {
+      "type": "Input.Number",
+      "id": "age",
+      "label": "Age",
+      "placeholder": "Your age",
+      "min": 18,
+      "max": 120,
+      "value": 30
+    },
+    {
+      "type": "Input.Date",
+      "id": "startDate",
+      "label": "Start Date",
+      "value": "2026-01-01"
+    },
+    {
+      "type": "Input.Time",
+      "id": "preferredTime",
+      "label": "Preferred Contact Time",
+      "value": "09:00"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "department",
+      "label": "Department",
+      "style": "compact",
+      "isRequired": true,
+      "choices": [
+        { "title": "Engineering",     "value": "eng"   },
+        { "title": "Marketing",       "value": "mkt"   },
+        { "title": "Human Resources", "value": "hr"    },
+        { "title": "Finance",         "value": "fin"   },
+        { "title": "Operations",      "value": "ops"   }
+      ]
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "skills",
+      "label": "Skills",
+      "style": "expanded",
+      "isMultiSelect": true,
+      "choices": [
+        { "title": "PowerShell", "value": "ps"     },
+        { "title": "Python",     "value": "py"     },
+        { "title": "JavaScript","value": "js"     },
+        { "title": "Azure",      "value": "azure"  },
+        { "title": "Docker",     "value": "docker" }
+      ]
+    },
+    {
+      "type": "Input.Toggle",
+      "id": "newsletter",
+      "title": "Subscribe to newsletter",
+      "value": "true"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Register"
+    }
+  ]
+}
