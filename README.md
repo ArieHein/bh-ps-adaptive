@@ -6,6 +6,9 @@ A **PowerShell module** that generates a Windows Forms UI from an
 Claude or GitHub Copilot can collect structured user input through
 form-like dialogs.
 
+This module was created with AI-Assistance for speed.
+This module is currently in Beta, until I completly verified. Use at your own peril.
+
 ---
 
 ## Features
